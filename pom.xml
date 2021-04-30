@@ -31,7 +31,8 @@
     <maven.surefire.plugin.version>3.0.0-M5</maven.surefire.plugin.version>
     <maven.war.plugin.version>3.3.1</maven.war.plugin.version>
 
-    <jetty.version>9.4.37.v20210219</jetty.version>
+    <!--<jetty.version>9.4.37.v20210219</jetty.version>-->
+    <jetty.version>9.4.40.v20210413</jetty.version>
   </properties>
 
   <dependencies>
@@ -44,6 +45,11 @@
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-servlets</artifactId>
       <version>${jetty.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.2.3</version>
     </dependency>
   </dependencies>
 
